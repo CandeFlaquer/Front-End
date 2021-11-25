@@ -1,0 +1,50 @@
+h1 {
+  text-align: center;
+}
+
+.pokemon {
+  display: inline-block;
+  text-align: center;
+}
+
+#favs :hover {
+  filter: drop-shadow(0 0 4px #ff4da6);
+  cursor: help;
+}
+#favs img:hover {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  /* from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
+      0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6; 
+  }
+  */
+
+  /* shake animation */
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
