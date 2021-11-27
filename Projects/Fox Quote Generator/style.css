@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap");
+
+body {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: calibri;
+}
+footer {
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  margin: 10px;
+}
+
+#Candunco {
+  font-size: 0.8em;
+  display: block;
+}
+#quote-box {
+  position: relative;
+  padding: 30px;
+  width: 450px;
+  box-shadow: 0.5em 0.5em 0.6em black;
+  border-radius: 0.4em;
+  font-family: "Baloo Chettan 2", cursive;
+  background-color: white;
+  color: white;
+  text-align: center;
+  display: table;
+  clear: both;
+}
+.text i {
+  font-size: 1.2rem;
+}
+#text {
+  width: 450px;
+  font-size: 1.5rem;
+}
+.button {
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-family: inherit;
+  background-color: #404040;
+  margin-top: 30px;
+  cursor: pointer;
+  display: block;
+  box-shadow: 0.1rem 0.1rem 0.2rem black;
+}
+#new-quote {
+  padding: 8px 18px 7px 18px;
+  float: right;
+}
+#tweet-quote,
+#youtube-reference {
+  float: left;
+  padding: 6px 10px 6px 10px;
+  margin-right: 5px;
+}
+button :hover {
+  box-shadow: 0.2rem 0.2rem 0.4rem 0.1rem black;
+  opacity: 0.8;
+}
+#easter-egg {
+  cursor: pointer;
+  animation: shiny-btn1 3s ease-in-out infinite;
+}
+@keyframes shiny-btn1 {
+  0% {
+    transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
