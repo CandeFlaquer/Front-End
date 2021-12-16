@@ -19,8 +19,8 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header class="has-navbar-fixed-top">
+  <body class="has-navbar-fixed-top">
+    <header>
       <nav
         class="navbar is-transparent is-fixed-top"
         role="navigation"
@@ -28,7 +28,9 @@
       >
         <div class="navbar-brand">
           <a class="navbar-item" href="#">
-            <img src="/assets/logo.jpg" width="112" height="28" />
+            <figure class="image is-32x32">
+              <img src="/assets/logo.png" width="112" height="28" />
+            </figure>
           </a>
 
           <a
@@ -76,7 +78,56 @@
         </div>
       </nav>
     </header>
+    <section class="home" id="home">
+      <h1 class="home-title">Hello World! I am <span>Cande!</span></h1>
+      <p class="home-subtitle">front end dev</p>
+      <figure class="image is-128x128">
+        <img
+          class="is-rounded"
+          src="/assets/ID.jpg"
+          alt="A picture of myself"
+        />
+      </figure>
+      <!--Career summary: A career summary is an effective way to introduce yourself as a professional by describing what it is you do. You can show your expertise in your profession by listing specific achievements and backing these up with percentages and numbers.
+      Philosophy statement: A philosophy statement, or mission statement, is where you state your core beliefs, values and motivations, and what you appreciate about the profession you're in.-->
+    </section>
 
+    <section class="hero">
+      <h2 class="hero-title">What I do</h2>
+      <div class="services">
+        <div class="service1">
+          <h3>Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iure
+            fuga sapiente maxime quia labore excepturi, qui, at obcaecati minima
+            possimus repudiandae culpa modi veniam quasi neque nam accusantium
+            tempora?
+          </p>
+        </div>
+        <div class="service2">
+          <h3>Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            sint eum possimus vitae ipsa excepturi libero vero repudiandae
+            maxime alias ea, natus nam perferendis aliquid ad earum atque
+            deserunt illo.
+          </p>
+        </div>
+        <div class="service3">
+          <h3>Resume</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            sint eum possimus vitae ipsa excepturi libero vero repudiandae
+            maxime alias ea, natus nam perferendis aliquid ad earum atque
+            deserunt illo.
+          </p>
+        </div>
+      </div>
+      <a href="Work" class="btn">My work</a>
+    </section>
+    <section class="samples">
+      <!--Work samples: The work sample section is the most important part of your portfolio because providing real-life samples of your work is the primary purpose of a portfolio. Aim to include samples of your best work that show all your relevant skills. Depending on your profession, you can include anything from charts to articles to lesson plans. You can also mention any accolades or positive feedback relating to specific work samples.-->
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
