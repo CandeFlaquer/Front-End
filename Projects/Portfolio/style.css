@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
 
 :root {
@@ -9,9 +9,9 @@
   --orange: #f4a261;
   --sienna: #e76f51;
 
-  --fs-h1: 3rem;
-  --fs-h2: 2.5rem;
-  --fs-h3: 1.5rem;
+  --fs-h1: 2.5rem;
+  --fs-h2: 2rem;
+  --fs-h3: 1.25rem;
   --fs-body: 1rem;
 }
 
@@ -28,6 +28,7 @@ h3 {
 }
 h1 {
   font-size: var(--fs-h1);
+  font-weight: 500;
 }
 h2 {
   font-size: var(--fs-h2);
@@ -38,15 +39,8 @@ h3 {
 
 span {
   font-weight: bold;
+  display: block;
   color: var(--sienna);
-}
-
-.home-subtitle,
-.about-subtitle {
-  font-family: "Roboto Mono", monospace;
-  font-size: var(--fs-h3);
-  background-color: var(--green);
-  color: white;
 }
 
 @media (min-width: 800px) {
@@ -56,4 +50,31 @@ span {
     --fs-h3: 1.5rem;
     --fs-body: 1.125rem;
   }
+}
+
+/* Home */
+.home {
+  padding: 5em 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home img {
+  max-width: 400px;
+}
+.home-subtitle,
+.about-subtitle {
+  font-family: "Roboto Mono", monospace;
+  font-size: var(--fs-h3);
+  background-color: var(--green);
+  color: white;
+  margin-bottom: 1em;
+  text-align: right;
+  padding: 0 20px;
+}
+.titles {
+  padding-left: 1em;
+}
+.home-subtitle {
+  margin-left: -100px;
 }
