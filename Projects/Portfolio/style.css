@@ -67,7 +67,7 @@ span {
 }
 .home img {
   max-width: 400px;
-  filter: drop-shadow(0 0 0.75rem var(--orange));
+  filter: drop-shadow(0 0 0.75rem black /* var(--orange) */);
 }
 .home-subtitle,
 .about-subtitle {
@@ -109,9 +109,18 @@ span {
 
 /* What I do */
 .hero {
-  background-color: black;
-  color: #f4a261;
+  background-color: var(--dark);
+  background-image: url(https://cdn.pixabay.com/photo/2016/05/05/11/22/computer-1373684_1280.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+  color: white;
+  text-align: center;
 }
+.hero h2 {
+  margin-top: 2rem;
+  color: var(--green);
+}
+/* Projects */
 .projects {
   background-color: black;
   color: #f4a261;
