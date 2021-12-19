@@ -32,15 +32,18 @@ h1 {
 }
 h2 {
   font-size: var(--fs-h2);
+  padding: 2rem 0;
 }
 h3 {
   font-size: var(--fs-h3);
 }
-
 span {
   font-weight: bold;
   display: block;
   color: var(--sienna);
+}
+.card img {
+  object-fit: cover;
 }
 @media (max-width: 310px) {
   .home {
@@ -74,7 +77,7 @@ span {
   font-family: "Roboto Mono", monospace;
   font-size: var(--fs-h3);
   background-color: var(--green);
-  color: white;
+  color: azure;
   padding: 5px 20px;
   letter-spacing: 0.1em;
 }
@@ -113,18 +116,58 @@ span {
   background-image: url(https://cdn.pixabay.com/photo/2016/05/05/11/22/computer-1373684_1280.jpg);
   background-blend-mode: multiply;
   background-size: cover;
-  color: white;
+  color: azure;
   text-align: center;
+  align-items: center;
 }
 .hero h2 {
-  margin-top: 2rem;
   color: var(--green);
+  text-align: center;
 }
+.service {
+  max-width: 500px;
+  margin: 0 auto;
+}
+@media (min-width: 990px) {
+  .hero-body {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+  }
+  .service + .service {
+    margin-left: 2em;
+  }
+}
+
+.btn {
+  text-decoration: none;
+  margin: 2rem;
+  padding: 0.5em 1.5em;
+  border-radius: 9999px;
+  text-decoration: none;
+  background-color: var(--green);
+  color: azure;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: transform 2000ms ease-and-out;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+
 /* Projects */
 .projects {
   background-color: black;
-  color: #f4a261;
+  color: var(--orange);
 }
+.projects h2 {
+  text-align: center;
+}
+
 footer {
   margin: 1em;
 }
