@@ -33,6 +33,7 @@ h1 {
 h2 {
   font-size: var(--fs-h2);
   padding: 2rem 0;
+  font-weight: bold;
 }
 h3 {
   font-size: var(--fs-h3);
@@ -42,6 +43,7 @@ span {
   display: block;
   color: var(--sienna);
 }
+
 .card img {
   object-fit: cover;
 }
@@ -92,8 +94,10 @@ span {
 }
 
 /* About Me */
-.about {
-  text-align: right;
+.about h2 {
+  font-weight: bold;
+  color: var(--dark);
+  margin-bottom: -0.75em;
 }
 .about img {
   max-width: 300px;
@@ -168,6 +172,27 @@ span {
   text-align: center;
 }
 
+/* Foote */
 footer {
-  margin: 1em;
+  background-color: var(--dark);
+  background-image: url(https://i.postimg.cc/cLrMmJ1G/network-ga475638d7-1280.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+  color: azure;
+  text-align: center;
+  padding: 2.5em 0;
+}
+
+footer a {
+  color: var(--green);
+  font-size: var(--fs-h3);
+  font-weight: bold;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 0;
+}
+.social-media li {
+  margin: 0 1em;
 }
