@@ -18,8 +18,8 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-   
   </head>
+
   <body class="has-navbar-fixed-top">
     <header>
       <nav
@@ -28,30 +28,33 @@
         aria-label="main navigation"
       >
         <div class="navbar-brand">
-          <a class="navbar-item" href="#">
+          <a class="navbar-item" href="#curriculum">
             <figure class="image is-32x32">
-              <img src="https://i.postimg.cc/2y3yT4Ww/logo.png" width="112" height="28" />
+              <img
+                src="https://i.postimg.cc/2y3yT4Ww/logo.png"
+                width="112"
+                height="28"
+              />
             </figure>
           </a>
 
           <a
             role="button"
             class="navbar-burger"
+            data-target="navMenu"
             aria-label="menu"
             aria-expanded="false"
-            data-target="navbarBasicExample"
           >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
         </div>
-
-        <div id="navbar" class="navbar-menu">
+        <div id="navMenu" class="navbar-menu">
           <div class="navbar-start">
             <a class="navbar-item" href="#home"> Home </a>
 
-            <a class="navbar-item" href="#hero"> Services </a>
+            <a class="navbar-item" href="#hero"> Info </a>
 
             <a class="navbar-item" href="#about"> About Me </a>
 
@@ -59,37 +62,52 @@
               <a class="navbar-link" href="#projects"> Projects </a>
 
               <div class="navbar-dropdown">
-                <a class="navbar-item" href="https://candeflaquer.github.io/Front-End/Practice/CSS/Pricing Panel/index.html" target="_blank"> E-commerce </a>
-                <a class="navbar-item" href="#" target="_blank"> Form </a>
-                <a class="navbar-item" href="https://candeflaquer.github.io/Front-End/Practice/Bootstrap/Museum of Candy/index.html" target="_blank"> Landing Page </a>
-                <a class="navbar-item" href="https://candeflaquer.github.io/Front-End/Practice/Node/index.html" target="_blank"> Languaje Detector </a>
-                <a class="navbar-item" href="https://candeflaquer.github.io/Front-End/Projects/Fox Quote Generator/index.html" target="_blank"> Quote Generator </a>
-                <a class="navbar-item" href="https://candeflaquer.github.io/Front-End/Practice/DOM/Score Keeper/index.html" target="_blank"> Score Keeper </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-warning is-rounded">
-                  <strong> Contact Info </strong>
+                <a
+                  class="navbar-item"
+                  href="https://candeflaquer.github.io/Front-End/Practice/CSS/Pricing Panel/index.html"
+                  target="_blank"
+                >
+                  Pricing Panel</a
+                >
+                <a
+                  class="navbar-item"
+                  href="https://candeflaquer.github.io/Front-End/Practice/Bootstrap/Museum of Candy/index.html"
+                  target="_blank"
+                >
+                  Landing Page
                 </a>
-                <a class="button is-warning is-light is-rounded"> Contact me </a>
+                <a
+                  class="navbar-item"
+                  href="https://candeflaquer.github.io/Front-End/Projects/Fox Quote Generator/index.html"
+                  target="_blank"
+                >
+                  Quote Generator
+                </a>
+                <a
+                  class="navbar-item"
+                  href="https://candeflaquer.github.io/Front-End/Practice/DOM/Score Keeper/index.html"
+                  target="_blank"
+                >
+                  Score Keeper
+                </a>
+                <hr class="navbar-divider" />
+                <a class="navbar-item" href="#in-progress" target="_blank">
+                  In Progress
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </nav>   
+      </nav>
     </header>
 
-    <section class="home-section" id="home">
+    <section class="home-section">
       <div class="home">
         <figure class="image is-320x320">
           <img
             class="home-img is-rounded"
             src="https://i.postimg.cc/wBc1BxHh/ID.jpg"
-            alt="A picture of myself"
+            alt="A picture of Cande"
           />
         </figure>
         <div class="titles">
@@ -101,21 +119,17 @@
           <p class="home-subtitle">front-end dev</p>
         </div>
       </div>
-
-      <!--Philosophy statement: A philosophy statement, or mission statement, is where you state your core beliefs, values and motivations, and what you appreciate about the profession you're in.
-      -->
     </section>
 
-    <section class="hero" id="hero">
-      <h2 class="hero-head">What I do</h2>
+    <section class="hero">
+      <h2 class="hero-title">What I do</h2>
       <div class="hero-body">
         <div class="service">
-          <h3>Design</h3>
+          <h3>Statement</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iure
-            fuga sapiente maxime quia labore excepturi, qui, at obcaecati minima
-            possimus repudiandae culpa modi veniam quasi neque nam accusantium
-            tempora?
+            A philosophy statement, or mission statement, is where you state
+            your core beliefs, values and motivations, and what you appreciate
+            about the profession you're in.
           </p>
         </div>
         <div class="service">
@@ -143,24 +157,35 @@
     <section class="about-section" id="about">
       <div class="about">
         <div class="titles">
-          <h2 class="about-head">Who I am</h2>
+          <h2 class="about-title">Who I am</h2>
           <p class="about-subtitle">bio summary</p>
           <div class="about-body">
-            <p>Self-taught hardworking developer with a knack for aesthetics as a result of years of working as a designer in the printing industry. I also have strong discipline and management skills from running a family business for 5 years. I am passionate about technology, science, and learning new things.</p>
+            <p>
+              Self-taught hardworking developer with a knack for aesthetics as a
+              result of years of working as a designer in the printing industry.
+              I also have strong discipline and management skills from running a
+              family business for 5 years. I am passionate about technology,
+              science, and learning new things.
+            </p>
             <p><a href="http://#ponerlinkdel">Resumé</a></p>
           </div>
         </div>
         <figure class="image is-200x200">
-          <img src="https://i.postimg.cc/tTqYn0C8/body.jpg" alt="Full body picture of Cande.">
+          <img
+            src="https://i.postimg.cc/tTqYn0C8/body.jpg"
+            alt="Full body picture of Cande."
+          />
         </figure>
       </div>
     </section>
 
     <section class="projects" id="projects">
-      <h2 class="projects-head">My Projects</h2>
+      <h2 class="projects-title">My Projects</h2>
       <p></p>
       <div class="projects-body container">
         <div class="columns">
+          <!-------------------------------------------------------->
+
           <div class="column is-one-quarter" id="1">
             <div class="card">
               <div class="card-image">
@@ -188,7 +213,8 @@
                 </div>
 
                 <div class="content">
-                  Simple page for business' price tiers. Made only using HTML and CSS.
+                  Simple page for business' price tiers. Made only using HTML
+                  and CSS.
                   <br />
                   <a href="#">#css</a> <a href="#">#responsive</a>
                   <br />
@@ -198,44 +224,9 @@
             </div>
           </div>
 
+          <!-------------------------------------------------------->
+
           <div class="column is-one-quarter" id="2">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-2by1">
-                  <img
-                    src="https://bulma.io/images/placeholders/1280x960.png"
-                    alt="Placeholder image"
-                  />
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
-                      <img
-                        src="https://bulma.io/images/placeholders/96x96.png"
-                        alt="Placeholder image"
-                      />
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <p class="title is-4">Form <br />Form</p>
-                    <p class="subtitle is-6">@johnsmith</p>
-                  </div>
-                </div>
-
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  <br />
-                  <a href="#">#css</a> <a href="#">#responsive</a>
-                  <br />
-                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-one-quarter" id="3">
             <div class="card">
               <div class="card-image">
                 <figure class="image is-2by1">
@@ -272,7 +263,110 @@
             </div>
           </div>
 
+          <!-------------------------------------------------------->
+
+          <div class="column is-one-quarter" id="3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img
+                    src="https://i.postimg.cc/q7qqymVB/Random-Fox-Quotes.png"
+                    alt="Placeholder image for Fox Quote Generator"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <a
+                        href="https://candeflaquer.github.io/Front-End/Practice/DOM/Score Keeper/index.html"
+                        target="_blank"
+                      >
+                        <img
+                          src="https://media.istockphoto.com/vectors/fox-icon-vector-id866667578?k=6&m=866667578&s=612x612&w=0&h=rjdbFWbOkQAIdI8OJmoYrOSre1eBlKHE0-dtl0RFOTY="
+                          alt="Placeholder thumbnail for Fox Quote Generator"
+                        />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Fox Quote <br />Generator</p>
+                    <p class="subtitle is-6">@candeflaquer</p>
+                  </div>
+                </div>
+
+                <div class="content">
+                  Freecodecamp test project: Random quote generator. Made using
+                  React.
+                  <br />
+                  <a href="#">#css</a> <a href="#">#react</a>
+                  <br />
+                  <time datetime="2021-06-14">14 Jun 2021</time>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-------------------------------------------------------->
+
           <div class="column is-one-quarter" id="4">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <a
+                    href="https://candeflaquer.github.io/Front-End/Practice/DOM/Score Keeper/index.html"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://i.postimg.cc/J0yqG3KG/Score-keeper.png"
+                      alt="Placeholder image for Score Keeper"
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img
+                        src="https://i.postimg.cc/JzCfCt4b/ping-pong-g1544966ad-640.png"
+                        alt="Placeholder thumbnail for Score Keeper"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <a
+                      href="https://candeflaquer.github.io/Front-End/Practice/DOM/Score Keeper/index.html"
+                      target="_blank"
+                    >
+                      <p class="title is-4">Score <br />Keeper</p>
+                    </a>
+                    <p class="subtitle is-6">@candeflaquer</p>
+                  </div>
+                </div>
+
+                <div class="content">
+                  Javascript DOM accesing and updating practice. Made using
+                  Bulma.
+                  <br />
+                  <a href="#">#bulma</a> <a href="#">#interactive</a>
+                  <br />
+                  <time datetime="2021-11-27">27 Nov 2021</time>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-------------------------------------------------------->
+
+        <!-------------------------------------------------------->
+
+        <h2 class="projects-title2">In Progress</h2>
+
+        <div class="columns">
+          <div class="column is-one-quarter" id="5">
             <div class="card">
               <div class="card-image">
                 <figure class="image is-2by1">
@@ -308,84 +402,8 @@
               </div>
             </div>
           </div>
-        </div>
-  
-        <div class="columns">
-          <div class="column is-one-quarter" id="5">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-2by1">
-                  <img
-                    src="https://i.postimg.cc/q7qqymVB/Random-Fox-Quotes.png"
-                    alt="Placeholder image for Fox Quote Generator"
-                  />
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
-                      <img
-                        src="https://media.istockphoto.com/vectors/fox-icon-vector-id866667578?k=6&m=866667578&s=612x612&w=0&h=rjdbFWbOkQAIdI8OJmoYrOSre1eBlKHE0-dtl0RFOTY="
-                        alt="Placeholder thumbnail for Fox Quote Generator"
-                      />
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <p class="title is-4">Fox Quote <br>Generator</p>
-                    <p class="subtitle is-6">@candeflaquer</p>
-                  </div>
-                </div>
-
-                <div class="content">
-                  Freecodecamp test project: Random quote generator. Made using React.
-                  <br />
-                  <a href="#">#css</a> <a href="#">#react</a>
-                  <br />
-                  <time datetime="2021-06-14">14 Jun 2021</time>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <div class="column is-one-quarter" id="6">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-2by1">
-                  <img
-                    src="https://i.postimg.cc/J0yqG3KG/Score-keeper.png"
-                    alt="Placeholder image for Score Keeper"
-                  />
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
-                      <img
-                        src="https://i.postimg.cc/JzCfCt4b/ping-pong-g1544966ad-640.png"
-                        alt="Placeholder thumbnail for Score Keeper"
-                      />
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <p class="title is-4">Score <br>Keeper</p>
-                    <p class="subtitle is-6">@candeflaquer</p>
-                  </div>
-                </div>
-
-                <div class="content">
-                  Javascript DOM accesing and updating practice. Made using Bulma.
-                  <br />
-                  <a href="#">#bulma</a> <a href="#">#interactive</a>
-                  <br />
-                  <time datetime="2021-11-27">27 Nov 2021</time>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-one-quarter" id="7">
             <div class="card">
               <div class="card-image">
                 <figure class="image is-2by1">
@@ -412,7 +430,8 @@
                 </div>
 
                 <div class="content">
-                  Freecodecamp test project: Random quote generator. Made with React & NodeJs.
+                  Freecodecamp test project: Random quote generator. Made with
+                  React & NodeJs.
                   <br />
                   <a href="#">#react</a> <a href="#">#nodejs</a>
                   <br />
@@ -421,6 +440,8 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
     </section>
 
     <footer>
@@ -428,20 +449,36 @@
         >candeflaquer@gmail.com</a
       >
       <ul class="social-media">
-        <li> 
-          <a class="media-link" href="https://github.com/CandeFlaquer" target="_blank">
-            <i class="fab fa-github"></i></a> 
+        <li>
+          <a
+            class="media-link"
+            href="https://github.com/CandeFlaquer"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i
+          ></a>
         </li>
-        <li> 
-          <a class="media-link" href="https://codepen.io/candeflaquer" target="_blank">
-            <i class="fab fa-codepen"></i></a> 
+        <li>
+          <a
+            class="media-link"
+            href="https://codepen.io/candeflaquer"
+            target="_blank"
+          >
+            <i class="fab fa-codepen"></i
+          ></a>
         </li>
-        <li> 
-          <a class="media-link" href="https://www.linkedin.com/in/candelarialrf/" target="_blank">
-            <i class="fab fa-linkedin"></i></a> 
+        <li>
+          <a
+            class="media-link"
+            href="https://www.linkedin.com/in/candelarialrf/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i
+          ></a>
         </li>
       </ul>
     </footer>
+
     <script src="app.js"></script>
   </body>
 </html>
