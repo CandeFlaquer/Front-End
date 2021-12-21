@@ -228,11 +228,27 @@ footer a {
   font-size: 10px;
 }
 /* Trial */
-.card{
-  
-}
+/* @media (min-width: 1024px) {
+  .column {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    min-width: 270px;
+    flex-wrap: wrap;
+  }
+} */
 .card:hover {
   transform: scale(1.1);
   transition: transform 2000ms ease-and-out;
   filter: drop-shadow(0 0 0.3rem);
 }
+/* .projects-body {
+  flex-direction: row;
+  justify-content: space-between;
+} */
+/* .columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} */
