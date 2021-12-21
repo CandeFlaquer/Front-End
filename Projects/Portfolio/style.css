@@ -47,9 +47,16 @@ span {
 .card img {
   object-fit: cover;
 }
+a {
+  color: var(--orange);
+}
+a:hover {
+  color: var(--sienna);
+}
 
 @media (max-width: 310px) {
-  .home {
+  .home,
+  .about {
     flex-direction: column;
     text-align: center;
   }
@@ -62,8 +69,6 @@ span {
     --fs-body: 1.125rem;
   }
 }
-
-/* Navbar */
 
 /* Home */
 .home,
@@ -94,6 +99,7 @@ span {
   margin-top: 0.5em;
   margin-left: -250px;
   text-align: right;
+  border-radius: 0 9999px 9999px 0;
 }
 
 /* About Me */
@@ -115,6 +121,7 @@ span {
 .about-subtitle {
   margin-top: 0.5em;
   margin-right: -180px;
+  border-radius: 9999px 0 0 9999px;
 }
 
 /* What I do */
@@ -163,6 +170,7 @@ span {
 }
 .btn:hover {
   transform: scale(1.1);
+  color: var(--dark);
 }
 
 /* Projects */
@@ -173,7 +181,20 @@ span {
 .projects-title2 {
   color: var(--yellow);
 }
+.in-progress {
+  padding-bottom: 2em;
+}
+@media (min-width: 769px) {
+  .in-progress {
+    display: flex;
+    justify-content: center;
+  }
+}
 
+hr {
+  margin: 0;
+  background-color: var(--dark);
+}
 /* Footer */
 footer {
   background-color: var(--dark);
@@ -182,7 +203,7 @@ footer {
   background-size: cover;
   color: azure;
   text-align: center;
-  padding: 2.5em 0;
+  padding: 2.5em 0 0.5em;
 }
 
 footer a {
@@ -197,4 +218,21 @@ footer a {
 }
 .social-media li {
   margin: 0 1em;
+}
+.credits {
+  padding-top: 3em;
+  font-size: 10px;
+}
+.credits a {
+  font-weight: 500;
+  font-size: 10px;
+}
+/* Trial */
+.card{
+  
+}
+.card:hover {
+  transform: scale(1.1);
+  transition: transform 2000ms ease-and-out;
+  filter: drop-shadow(0 0 0.3rem);
 }
