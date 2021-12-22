@@ -138,7 +138,7 @@ a:hover {
   color: var(--green);
 }
 .statement {
-  max-width: 500px;
+  max-width: 450px;
   margin: 0 auto;
 }
 @media (min-width: 990px) {
