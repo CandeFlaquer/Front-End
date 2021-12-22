@@ -137,7 +137,7 @@ a:hover {
 .hero h2 {
   color: var(--green);
 }
-.service {
+.statement {
   max-width: 500px;
   margin: 0 auto;
 }
@@ -148,7 +148,7 @@ a:hover {
     margin-right: auto;
     max-width: 1000px;
   }
-  .service + .service {
+  .statement + .statement {
     margin-left: 2em;
   }
 }
@@ -184,6 +184,11 @@ a:hover {
 .in-progress {
   padding-bottom: 2em;
 }
+.card:hover {
+  transform: scale(1.1);
+  transition: transform 2000ms ease-and-out;
+  filter: drop-shadow(0 0 0.3rem);
+}
 @media (min-width: 769px) {
   .in-progress {
     display: flex;
@@ -195,6 +200,7 @@ hr {
   margin: 0;
   background-color: var(--dark);
 }
+
 /* Footer */
 footer {
   background-color: var(--dark);
@@ -205,7 +211,6 @@ footer {
   text-align: center;
   padding: 2.5em 0 0.5em;
 }
-
 footer a {
   color: var(--green);
   font-size: var(--fs-h3);
@@ -227,28 +232,11 @@ footer a {
   font-weight: 500;
   font-size: 10px;
 }
+
 /* Trial */
-/* @media (min-width: 1024px) {
+@media (min-width: 1024px) {
   .column {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
-  .card {
-    min-width: 270px;
-    flex-wrap: wrap;
-  }
-} */
-.card:hover {
-  transform: scale(1.1);
-  transition: transform 2000ms ease-and-out;
-  filter: drop-shadow(0 0 0.3rem);
 }
-/* .projects-body {
-  flex-direction: row;
-  justify-content: space-between;
-} */
-/* .columns {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-} */
