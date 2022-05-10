@@ -195,13 +195,15 @@ a:hover {
 #column {
   min-width: 270px;
 }
+#main-project {
+  filter: drop-shadow(0 0 0.75rem var(--green));
+}
 @media (min-width: 769px) {
   .in-progress {
     display: flex;
     justify-content: center;
   }
 }
-
 hr {
   margin: 0;
   background-color: var(--dark);
